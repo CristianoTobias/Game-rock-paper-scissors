@@ -52,11 +52,15 @@ const game = () => {
     scorePlayer = 0;
     scoreComputer = 0;
     for(let i = 0; i < 5; i++){
-        const playerSelection = window.prompt("Choose: Paper/Rock/Scissor! ").toLowerCase()
-        while(playerSelection != 'rock' || playerSelection != 'paper' || playerSelection != 'scissor'){
-         alert('Error: Invalid! Type again!')
-         playerSelection = window.prompt("Choose: Paper/Rock/Scissor! ").toLowerCase()
-
+        let playerSelection = window.prompt("Choose: Paper/Rock/Scissor! ").toLowerCase()
+        let b = true
+        while(b){
+         if(playerSelection == 'rock' || playerSelection == 'paper' || playerSelection == 'scissor'){
+          b = false
+        }else{
+        alert('Error: Invalid! Type again!');
+        playerSelection = window.prompt("Choose: Paper/Rock/Scissor! ").toLowerCase();
+        }
         }
         const computerSelection = computerPlay();
         const message = playRound(playerSelection, computerSelection);
