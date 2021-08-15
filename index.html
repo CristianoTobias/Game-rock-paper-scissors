@@ -5,18 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Paper/Rock/Scissor</title>
-    <div id="result">
-      <input type="number" id="scorePlayer" value="0">
-      <input type="number" id="scoreComputer" value="0">
-      <span id="message"></span>
-    </div>
-    <button id="paper" onclick="playRound(this.id, computerPlay())">Paper</button>
-    <button id="rock"onclick="playRound(this.id, computerPlay())">Rock</button>
-    <button id="scissor" onclick="playRound(this.id, computerPlay())">Scissor</button>
-    
+    <link rel="stylesheet" href="style.css">
+     
 </head>
 <body>
-    <span id="choose" onclick="playRound()"></span>
+  <div id="interface">
+      <div id="result">
+          <h1>Rock, Paper or Scissors</h1>
+          <div id="div-imgs">
+              <img id="img-options" src="options.png" alt="options">
+              <img class="spinner " id="img-player" src="paperleft.png" alt="paper">
+              <img class="spinner " id="img-computer" src="paperright.png" alt="rock">
+          </div>
+          <div id="div-message">
+              <span id="message"></span>
+          </div>
+          <div id="buttons-game">
+            <button id="paper" onclick="playRound(this.id, computerPlay())"><img src="paperleft.png" width="30px" height="30px"></button>
+            <button id="rock" onclick="playRound(this.id, computerPlay())"><img src="rockleft.png" width="30px" height="30px"></button>
+            <button id="scissor" onclick="playRound(this.id, computerPlay())"><img src="scissorleft.png" width="30px" height="30px"></button>
+          </div>
+          <div id="div-inputs">
+            <label for="scorePlayer">You</label>
+            <input type="number" id="scorePlayer" value="0" readonly>
+            <label for="scoreComputer">Computer</label>
+            <input type="number" id="scoreComputer" value="0" readonly>
+        </div>
+        <!--<button id="reset-game" onclick="resetGame()">reset</button>-->
+          <button id="start-game" onclick="startGame()">Play</button>
+      </div>
+    </div>
+  </div>
   <script src="script.js"></script>  
 </body>
 </html>

@@ -1,0 +1,154 @@
+body {
+    margin: 0px;
+    font-family: cursive;
+    }
+div h1{
+    color: blanchedalmond;
+}    
+div#interface {
+    width: 100vw;
+    height: 100vh;
+    background: #d5c4a1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+div#result {
+    background-color: #5a2729;
+    width: 500px;
+    height: 800px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 3px #98503c;
+    color: white;
+
+}
+h1 {
+    text-align: center;
+}
+div#buttons-game {
+    width: 150px;
+    margin: 0 auto;
+    caret-color: transparent;
+    
+    
+}
+div#div-message{
+    width: 100%;
+    height: 80px;
+    font-size: 25pt;
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 20px;
+    color: #dbaed5;
+    font-weight: bolder;
+    
+}
+div#div-imgs {
+    width: 500px;
+    height: 300px;
+    
+    
+}
+div#div-inputs {
+    width: 500px;
+    height: 80px;
+    display: flex;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    height: 120px;
+    color: #fbf0d6;
+    font-weight: bolder;
+    
+}
+img#img-options {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    caret-color: transparent;
+    border: 1px solid black;
+    
+}
+img#img-player {
+    position: absolute;
+    border-radius: 50%;
+    caret-color: transparent;
+    margin-left: 30px;
+   
+    
+    
+}
+img#img-computer{
+    position: absolute;
+    border-radius: 50%;
+    caret-color: transparent;
+    margin-left: 250px;
+    
+    
+}
+input#scoreComputer, input#scorePlayer {
+    font-size: 40pt;
+    width: 45px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    caret-color: transparent;
+    margin: 10px;
+    color:sienna;
+    
+    
+}   
+
+label {
+    font-size: 22pt;
+    pointer-events: none;
+    caret-color: transparent;
+}
+button#start-game {
+    font-size: 18pt;
+    float: right;
+    margin-right: 40px;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 30px;
+    background: blanchedalmond;
+}
+.spinner#img-player {
+	animation: loadingPlayer 0.1s linear infinite;
+}
+.spinner#img-computer {
+    animation: loadingComputer 0.1s linear infinite;
+}
+
+@keyframes loadingPlayer {
+	0% {
+		transform: rotate(360deg);
+	}
+    25% {
+		transform: rotate(260deg);
+	}
+    50% {
+		transform: rotate(180deg);
+	}
+    75% {
+		transform: rotate(90deg);
+	}
+	100% {
+		transform: rotate(0);
+	}
+}
+@keyframes loadingComputer {
+	0% {
+		transform: rotate(0);
+	}
+    50% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
