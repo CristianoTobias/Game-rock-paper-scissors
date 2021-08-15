@@ -1,2 +1,2 @@
-# gamePaperRockScissor
+# gameRockPaperScissor
  
