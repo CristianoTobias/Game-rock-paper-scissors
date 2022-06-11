@@ -71,7 +71,7 @@ const playRound = (playerSelection, computerSelection) => {
     scoreComputer.value = b;
     scorePlayer.value = a;
     divButtonsGame.style.visibility = "hidden";
-    setTimeout(startGame, 2000);
+    setTimeout(startGame, 5000);
    
     
     
